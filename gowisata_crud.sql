@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Dec 09, 2025 at 08:47 AM
+-- Generation Time: Dec 09, 2025 at 06:07 PM
 -- Server version: 8.4.3
 -- PHP Version: 8.3.16
 
@@ -72,7 +72,11 @@ CREATE TABLE `destinasi` (
 
 INSERT INTO `destinasi` (`id`, `kategori_id`, `nama`, `slug`, `deskripsi`, `kota`, `provinsi`, `harga_tiket`, `jam_buka`, `latitude`, `longitude`, `rata_rating`, `jumlah_rating`, `dibuat_pada`, `diperbarui_pada`) VALUES
 (1, NULL, 'Gunung Maras', 'gunung-maras', '', 'Berbura', 'Bangka-Belitung Islands', 0, '', -1.8833330, 105.8333330, 5.00, 3, '2025-12-09 07:50:19', '2025-12-09 08:46:07'),
-(2, NULL, 'Pantai Pasir Padi', 'pantai-pasir-padi', '', 'Pangkalpinang', 'Bangka-Belitung Islands', 0, '08:00-17:00', -2.1047897, 106.1672570, 0.00, 0, '2025-12-09 08:26:38', '2025-12-09 08:26:38');
+(2, NULL, 'Pantai Pasir Padi', 'pantai-pasir-padi', '', 'Pangkalpinang', 'Bangka-Belitung Islands', 0, '08:00-17:00', -2.1047897, 106.1672570, 0.00, 0, '2025-12-09 08:26:38', '2025-12-09 08:26:38'),
+(3, NULL, 'Wisata Desa Namang', 'wisata-desa-namang', '', 'Desa Namang', 'Bangka-Belitung Islands', 0, '08:00-17:00', -2.3218775, 106.1898294, 0.00, 0, '2025-12-09 09:17:11', '2025-12-09 09:17:11'),
+(4, NULL, 'Alun Alun Toboali', 'alun-alun-toboali', '', 'Toboali', 'Bangka-Belitung Islands', 5000, '08:00-22:00', -3.0107089, 106.4549280, 0.00, 0, '2025-12-09 17:44:52', '2025-12-09 17:44:52'),
+(5, NULL, 'Rumput Hijau/Vila Acun', 'rumput-hijau-vila-acun', '', 'Pangkalan Baru', 'Bangka-Belitung Islands', 5000, '08:00-17:00', -2.1326040, 106.0841257, 0.00, 0, '2025-12-09 17:53:58', '2025-12-09 17:53:58'),
+(6, NULL, 'Bukit Pau', 'bukit-pau', '', 'Pangkalan Baru', 'Bangka-Belitung Islands', 0, '', -2.2188551, 106.1020090, 0.00, 0, '2025-12-09 18:06:24', '2025-12-09 18:06:24');
 
 -- --------------------------------------------------------
 
@@ -96,7 +100,12 @@ CREATE TABLE `gambar_destinasi` (
 INSERT INTO `gambar_destinasi` (`id`, `destinasi_id`, `url_gambar`, `keterangan`, `utama`, `dibuat_pada`) VALUES
 (1, 1, '1765266619_images.jpg', NULL, 1, '2025-12-09 07:50:19'),
 (2, 2, '1765268798_MENYULAP-PASIR-PADI-JADI-ANCOL-DI-PANGKALPINANG.png', NULL, 1, '2025-12-09 08:26:38'),
-(3, 2, '1765268798_624_Keunikan_Pantai_Pasir_Padi_yang_memiliki_garis_pantai_sepanjang_100_hingga_300_m_adalah_ombak_ya2.jpg', NULL, 0, '2025-12-09 08:26:38');
+(3, 2, '1765268798_624_Keunikan_Pantai_Pasir_Padi_yang_memiliki_garis_pantai_sepanjang_100_hingga_300_m_adalah_ombak_ya2.jpg', NULL, 0, '2025-12-09 08:26:38'),
+(4, 3, '1765271831_Mendung_di_desa_namang.jpg', NULL, 1, '2025-12-09 09:17:11'),
+(5, 3, '1765271831_Thumb_Yt_Fb.jpg', NULL, 0, '2025-12-09 09:17:11'),
+(6, 4, '1765302292_WhatsApp-Image-2025-01-17-at-13.44.06-e1737096925816.jpeg', NULL, 1, '2025-12-09 17:44:52'),
+(7, 5, '1765302838_Screenshot_2025-12-10_005309.png', NULL, 1, '2025-12-09 17:53:58'),
+(8, 6, '1765303584_Screenshot_2025-12-10_010425.png', NULL, 1, '2025-12-09 18:06:24');
 
 -- --------------------------------------------------------
 
@@ -209,13 +218,13 @@ ALTER TABLE `bookmark`
 -- AUTO_INCREMENT for table `destinasi`
 --
 ALTER TABLE `destinasi`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `gambar_destinasi`
 --
 ALTER TABLE `gambar_destinasi`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `ulasan`
