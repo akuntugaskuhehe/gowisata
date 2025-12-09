@@ -1,0 +1,15 @@
+akun admin
+
+admin@gowisata.com
+admin123
+http://localhost/admin/index.php
+
+
+akun user
+user@gowisata.com
+user123
+
+
+
+setting database ada di
+config/app.php

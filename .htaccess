@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# ROUTE UNTUK DESTINASI (slug)
+RewriteRule ^wisata/([a-zA-Z0-9-]+)/?$ destinasi/seo-detail.php?slug=$1 [L]
+
+# ROUTE UNTUK KATEGORI
+RewriteRule ^kategori/([a-zA-Z0-9-]+)/?$ destinasi/kategori.php?slug=$1 [L]
+
+# ROUTE SEMUA DESTINASI
+RewriteRule ^wisata/?$ destinasi/index.php [L]
